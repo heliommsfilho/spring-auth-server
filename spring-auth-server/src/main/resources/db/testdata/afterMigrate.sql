@@ -1,3 +1,10 @@
+-- Clean tables
+TRUNCATE user_role CASCADE;
+TRUNCATE role_permission CASCADE;
+TRUNCATE app_user CASCADE;
+TRUNCATE permission CASCADE;
+TRUNCATE role CASCADE;
+
 -- Password: root; Salt: Pxw3a7FnlWlaUZpy
 INSERT INTO public.app_user (id, username, password, enabled) VALUES ('201d16d5-d08d-43f0-ab81-ce79836d24e0', 'root', '$argon2i$v=19$m=1024,t=20,p=10$UHh3M2E3Rm5sV2xhVVpweQ$pDpNbGynNQQCDUGuGGm38jJNjc4+EvHgV4IohhcwF33rpeIaXdPGwkX0TNEAVxFe8FlHoNSgw0D1yrET3boc0Z5smB+hafpLpFbmyuHfNOZc0O+uuPfO9FGFLhYS6/RzKRfiaA', true);
 
